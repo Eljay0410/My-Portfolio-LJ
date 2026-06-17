@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/react-swc'
-import tailwindcss from '@tailwindcss/vite' // Iwanan mo itong import na ito sa itaas
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [
-    react(), 
-    tailwindcss() // Ibalik mo ito para hindi mag-error ang build mo!
+    react(),
+    tailwindcss()
   ],
-  base: '/My-Portfolio-LJ/', 
+  base: '/My-Portfolio-LJ/',
 })
