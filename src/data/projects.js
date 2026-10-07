@@ -4,6 +4,7 @@ import lisThumbnail from "../assets/lis.jpg";
 import greenNestThumbnail from "../assets/greenest.png";
 import oasysHome from "../assets/oasys-home.jpg";
 
+
 export const projects = [
   {
     title: "OASYS System",
@@ -66,7 +67,8 @@ export const projects = [
     description:
       "A modern Figma web design concept focused on clean layout, nature-inspired branding, and a user-friendly browsing experience.",
     tech: ["Figma", "Web Design", "UI Design", "Responsive Design"],
-    link: "https://www.figma.com/proto/soGIcQkuAwBEJneElF0lVB/GreenNest?t=Ox1JTfybPZnFE0VK-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&node-id=116-25",
+    link: "https://www.facebook.com/profile.php?id=61584182204944",
     image: greenNestThumbnail,
   },
+
 ];

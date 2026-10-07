@@ -21,6 +21,10 @@ const webDesigningProjects = projects.filter(
   (project) => project.category === "Web Designing"
 );
 
+const graphicsDesigningProjects = projects.filter(
+  (project) => project.category === "Graphics Designing"
+);
+
 function ProjectCard({ project, index }) {
   const hasLink = project.link && project.link !== "#";
 
@@ -132,6 +136,8 @@ export default function Projects() {
       />
 
       <ProjectCategory title="Web Designing" projects={webDesigningProjects} />
+
+      <ProjectCategory title="Graphics Designing" projects={graphicsDesigningProjects} />
     </section>
   );
 }
