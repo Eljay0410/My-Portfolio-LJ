@@ -102,15 +102,15 @@ export default function Hero() {
 
         <div className="relative rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-2xl backdrop-blur">
           <div className="rounded-[1.5rem] bg-slate-900 p-8">
-            <div className="mx-auto h-52 w-52 overflow-hidden rounded-full border-4 border-cyan-400/40 bg-slate-800 shadow-[0_0_35px_rgba(34,211,238,0.25)] md:h-60 md:w-60">
+            <div className="mx-auto aspect-square w-56 shrink-0 overflow-hidden rounded-full border-4 border-cyan-400/40 bg-slate-800 shadow-[0_0_35px_rgba(34,211,238,0.25)] sm:w-60 md:w-64">
               <img
                 src={profilePic}
                 alt="Larry Cruz profile"
-                className="h-full w-full scale-125 object-cover object-center"
+                className="block h-full w-full rounded-full object-cover object-[center_30%]"
               />
             </div>
 
-            <div className="mt-8 text-center">
+            <div className="mt-6 text-center">
               <h3 className="text-3xl font-bold">Larry Cruz</h3>
               <p className="mt-2 text-slate-400">Frontend Developer</p>
             </div>
