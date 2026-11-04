@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Mail, ArrowRight, Sparkles } from "lucide-react";
-import profilePic from "../assets/dp.jpg";
+import profilePic from "../assets/cruz_id.jpg";
 
 const fadeUp = {
   hidden: {
