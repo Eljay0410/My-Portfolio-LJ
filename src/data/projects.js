@@ -7,6 +7,14 @@ import oasysHome from "../assets/oasys-home.jpg";
 
 export const projects = [
   {
+    title: "Costly",
+    category: "Web Development",
+    description:
+      "A web application designed for small business owners and home bakers to calculate recipe costing, ingredient usage, menu item margins, and selling prices.",
+    tech: ["React.js", "Vite", "Tailwind CSS", "JavaScript"],
+    link: "https://costly-tau.vercel.app/",
+  },
+  {
     title: "OASYS System",
     category: "Web Development",
     description:
