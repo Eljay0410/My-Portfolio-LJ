@@ -77,7 +77,7 @@ export const projects = [
     description:
       "A modern Figma web design concept focused on clean layout, nature-inspired branding, and a user-friendly browsing experience.",
     tech: ["Figma", "Web Design", "UI Design", "Responsive Design"],
-    link: "https://www.facebook.com/profile.php?id=61584182204944",
+    link: "https://www.figma.com/proto/soGIcQkuAwBEJneElF0lVB/GreenNest?node-id=116-25&t=WcZVHMhmw1ZhzMat-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
     image: greenNestThumbnail,
   },
 
