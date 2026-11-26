@@ -1,4 +1,5 @@
 import cerverHome from "../assets/cerver-home.jpg";
+import costlyHome from "../assets/costly-home.png";
 import doctraxHome from "../assets/doctrax-home.png";
 import lisThumbnail from "../assets/lis.jpg";
 import greenNestThumbnail from "../assets/greenest.png";
@@ -13,6 +14,7 @@ export const projects = [
       "A web application designed for small business owners and home bakers to calculate recipe costing, ingredient usage, menu item margins, and selling prices.",
     tech: ["React.js", "Vite", "Tailwind CSS", "JavaScript"],
     link: "https://costly-tau.vercel.app/",
+    image: costlyHome,
   },
   {
     title: "OASYS System",
