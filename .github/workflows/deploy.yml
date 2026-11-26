@@ -5,6 +5,7 @@ on:
     branches: 'main'
 
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
@@ -37,6 +38,23 @@ jobs:
         with:
           path: './dist'
           name: github-pages-${{ github.run_attempt }}
+      - name: Wait for Pages artifact registration
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ARTIFACT_NAME: github-pages-${{ github.run_attempt }}
+        run: |
+          for attempt in {1..10}; do
+            if curl --silent --show-error --fail \
+              -H "Authorization: Bearer $GH_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts?per_page=100" \
+              | jq -e --arg name "$ARTIFACT_NAME" 'any(.artifacts[]?; .name == $name)' >/dev/null; then
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "Pages artifact '$ARTIFACT_NAME' did not appear in the Actions API after 20 seconds." >&2
+          exit 1
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
